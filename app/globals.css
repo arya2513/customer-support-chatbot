@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.dot-pulse {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9ca3af;
+  animation: dot-pulse 1s infinite linear;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9ca3af;
+}
+
+.dot-pulse::before {
+  left: -15px;
+  animation: dot-pulse 1s infinite -0.33s linear;
+}
+
+.dot-pulse::after {
+  left: 15px;
+  animation: dot-pulse 1s infinite -0.66s linear;
+}
+
+@keyframes dot-pulse {
+  0% { transform: scale(0.6); }
+  50% { transform: scale(1); }
+  100% { transform: scale(0.6); }
+} 

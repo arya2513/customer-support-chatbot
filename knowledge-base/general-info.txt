@@ -1,0 +1,8 @@
+Our company provides software solutions for businesses.
+We offer 24/7 customer support.
+Our main products include:
+- Cloud hosting services
+- Database management
+- API integration tools
+Our business hours are Monday-Friday, 9 AM - 5 PM EST.
+For technical support, email: support@company.com 
